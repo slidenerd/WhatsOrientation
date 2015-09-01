@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">WhatsOrientation</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="gravitySensorLabel">Gravity Sensor</string>
+    <string name="accelerometerMagnetometerLabel"><![CDATA[Accelerometer & Magnetometer]]></string>
+    <string name="gravityMagnetometerLabel"><![CDATA[Gravity & Magnetometer]]></string>
+    <string name="rotationVectorLabel">Rotation Vector</string>
+    <string name="speakOrientationLabel">TTS Notifications</string>
+    <string name="ttsNotificationsOff">TTS Notifications Off</string>
+    <string name="ttsNotificationsOn">TTS Notifications On</string>
+    <string name="selectedSensorLabel">Selected Sensor</string>
+    <string name="orientationLabel">Orientation Label</string>
+    <string name="rotationMatrixGenFailureMessage">Rotation Matrix Could Not Be Generated</string>
+    <string name="xAxisLabel">X Axis:</string>
+    <string name="yAxisLabel">Y Axis:</string>
+    <string name="zAxisLabel">Z Axis:</string>
+    <string name="azimuthLabel">Azimuth</string>
+    <string name="pitchLabel">Pitch</string>
+    <string name="rollLabel">Roll</string>
+    <string name="faceDownText">Face Down</string>
+    <string name="faceUpText">Face Up</string>
+    <string name="no_accelerometer_magnetometer">Your Device Does Not Have An Accelerometer or Magnetometer</string>
+    <string name="no_gravitometer_magnetometer">Your Device Does Not Have A Gravity Sensor or Magnetometer</string>
+    <string name="no_gravitometer">Your Device Does Not Have a Gravity Sensor</string>
+    <string name="no_rotation_vector">Your Device Does Not Have A Rotation Vector</string>
+</resources>

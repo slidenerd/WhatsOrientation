@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <RadioGroup
+        android:id="@+id/sensorSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <RadioButton
+            android:id="@+id/gravitySensor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onSensorSelectorClick"
+            android:text="@string/gravitySensorLabel" />
+
+        <RadioButton
+            android:id="@+id/accelerometerMagnetometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onSensorSelectorClick"
+            android:text="@string/accelerometerMagnetometerLabel" />
+
+        <RadioButton
+            android:id="@+id/gravityMagnetometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onSensorSelectorClick"
+            android:text="@string/gravityMagnetometerLabel" />
+
+        <RadioButton
+            android:id="@+id/rotationVector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onSensorSelectorClick"
+            android:text="@string/rotationVectorLabel" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/selectedSensorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorSelector"
+        android:layout_marginRight="5dip"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/selectedSensorLabel" />
+
+    <TextView
+        android:id="@+id/selectedSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/selectedSensorLabel"
+        android:layout_alignTop="@id/selectedSensorLabel"
+        android:layout_toRightOf="@id/selectedSensorLabel"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/orientationLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedSensorValue"
+        android:layout_marginRight="5dip"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/orientationLabel" />
+
+    <TextView
+        android:id="@+id/orientationValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/orientationLabel"
+        android:layout_alignTop="@id/orientationLabel"
+        android:layout_toRightOf="@id/orientationLabel"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorXLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orientationValue"
+        android:layout_marginRight="5dip"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorXValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sensorXLabel"
+        android:layout_alignTop="@id/sensorXLabel"
+        android:layout_toRightOf="@id/sensorXLabel"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorYLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorXLabel"
+        android:layout_marginRight="5dip"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorYValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sensorYLabel"
+        android:layout_alignTop="@id/sensorYLabel"
+        android:layout_toRightOf="@id/sensorYLabel"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorZLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorYLabel"
+        android:layout_marginRight="5dip"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/sensorZValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/sensorZLabel"
+        android:layout_alignTop="@id/sensorZLabel"
+        android:layout_toRightOf="@id/sensorZLabel"
+        android:fontFamily="sans-serif-light" />
+
+    <TextView
+        android:id="@+id/status_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sensorZLabel"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="32sp" />
+
+</RelativeLayout>
